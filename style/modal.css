@@ -1,0 +1,92 @@
+.modal {
+	position: fixed;
+	top: 0px;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+	padding-left: 60px;
+	padding-right: 60px;
+	display: flex;
+	height: 100%;
+}
+
+.modal__wrap-modal {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	width: 100%;
+	max-width: 1106px;
+	margin: auto;
+	padding: 32px;
+	background-color: #FFFFFE;
+	border-radius: 6px;
+}
+
+.header-modal {
+	display: flex;
+	border-bottom: 2px solid #505050;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.type-animal {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.information-modal__wrap-id .information-modal__header {
+	display: flex;
+	gap: 12px;
+}
+
+.id-modal-data {
+	font-weight: 700;
+}
+
+.cross {
+	cursor: pointer;
+}
+
+.cross:hover svg rect {
+	fill: #363636;
+}
+
+.modal-main {
+	display: flex;
+	gap: 24px;
+}
+
+.photo-animal-modal {
+	min-width: 320px;
+	height: 240px;
+	border-radius: 6px;
+	background-color: #363636;
+}
+
+.photo-animal-modal img {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.information-modal {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.information-modal__wrap-id {
+	display: flex;
+	gap: 12px;
+}
+
+.information-modal>div:not(.hidden-for-screen-reader) {
+	display: flex;
+}
+
+.information-modal__header {
+	width: 180px;
+}
