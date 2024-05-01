@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>lonely-pets</title>
 	<link rel="stylesheet" href="./normalize/normalize.css">
 	<link rel="stylesheet" href="./style/style.css">
 	<link rel="stylesheet" href="./style/main.css">
@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="./style/header.css">
 	<link rel="stylesheet" href="./style/form.css">
 	<link rel="stylesheet" href="./style/footer.css">
-	<script defer src="./script/create.js"></script>
+	<script defer type="module" src="./script/create.js"></script>
+	<script defer src="./script/load.js"></script>
 </head>
 
 <body>
@@ -80,10 +81,38 @@
 					<input type="radio" class="radio-button" id="man-add" name="language">
 					<label for="man-add">м</label>
 				</div>
-				<div class="woman-add gender__item wrap-radio-button">
-					<input type="radio" class="radio-button" id="woman-add" name="language">
-					<label for="woman-add">ж</label>
+				<!-- <div class="wrap-page"> -->
+				<div class="registration-add">
+					<p class="registration">Регистрация объявления</p>
+					<p class="ps">Расскажите о питомце, чтобы ему было проще найти дом.</p>
 				</div>
+				<div class="form-filling">
+					<div class="address-home">
+						<label for="address-home">адрес</label>
+						<input name="address" type="text" placeholder="адрес">
+					</div>
+					<div class="contacts">
+						<label for="contacts">контакты</label>
+						<input name="contacts" type="text" placeholder="телефон | telegram | whatsapp | почта | вконтакте">
+					</div>
+					<div class="description-animal">
+						<p>описание</p>
+						<textarea name="description" type="text" placeholder="описание"></textarea>
+					</div>
+					<div class="animals">
+						<label for="variety">вид</label>
+						<select name="variety">
+							<option disabled="disabled" selected="selected">вид</option>
+							<option>кошка</option>
+							<option>собака</option>
+							<option>грызун</option>
+							<option>другое</option>
+						</select>
+					</div>
+					<div class="photo">
+						<label for="photo">фотография</label>
+						<p>прикрепить</p>
+						<input class="photo-input" type="file" name="image">
 
 			</div>
 			<div class="button-send">
