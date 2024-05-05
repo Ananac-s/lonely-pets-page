@@ -12,8 +12,11 @@
 	<link rel="stylesheet" href="./style/header.css">
 	<link rel="stylesheet" href="./style/form.css">
 	<link rel="stylesheet" href="./style/footer.css">
+	<link rel="stylesheet" href="./style/notice.css">
+	<link rel="stylesheet" href="./style/load_photo.css">
 	<script defer type="module" src="./script/create.js"></script>
 	<script defer src="./script/load.js"></script>
+	<script defer src="./script/load_photo.js"></script>
 </head>
 
 <body>
@@ -109,17 +112,50 @@
 							<option>другое</option>
 						</select>
 					</div>
-					<div class="photo">
-						<label for="photo">фотография</label>
-						<p>прикрепить</p>
-						<input class="photo-input" type="file" name="image">
+					<div class="load-photo">
+						<label>фотография</label>
+						<div class="photo__wrap-photo">
+							<img class="photo-preview">
+							<svg width="398" height="286" viewBox="0 0 398 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="398" height="286" fill="white" fill-opacity="0.45"/>
+								<rect class="plus" x="181" y="141" width="36" height="4" rx="2" fill="#363636"/>
+								<rect class="plus" x="197" y="161" width="36" height="4" rx="2" transform="rotate(-90 197 161)" fill="#363636"/>
+							</svg>
+								
+							<input class="photo-input hidden-for-screen-reader" type="file" name="image">
+						</div>
+					</div>
+					<div class="dimensions">
+						<label for="sizeng">размер (приблизительно)</label>
+						<select name="size">
+							<option disabled="disabled" selected="selected" value="">размер</option>
+							<option value="small">мелкий</option>
+							<option value="middle">средний</option>
+							<option value="large">крупный</option>
+						</select>
+					</div>
+					<div class="old">
+						<label for="older">возраст (приблизительно)</label>
+						<input class="older-from" name="age" type="text" placeholder="возраст">
+					</div>
+					<div class="gender-add">
+						<label for="gender">пол</label>
+						<div class="man-add gender__item wrap-radio-button">
+							<input type="radio" class="radio-button" id="man-add" name="gender">
+							<label for="man-add">м</label>
+						</div>
+						<div class="woman-add gender__item wrap-radio-button">
+							<input type="radio" class="radio-button" id="woman-add" name="gender">
+							<label for="woman-add">ж</label>
+						</div>
 
-			</div>
-			<div class="button-send">
-				<button>оставить запрос</button>
-			</div>
-		</form>
-		<!-- </div> -->
+					</div>
+					<div class="button-send">
+						<button>оставить запрос</button>
+						<div class="wrap-notice"></div>
+					</div>
+				</div>
+				<!-- </div> -->
 
 
 		<!-- </form> -->
